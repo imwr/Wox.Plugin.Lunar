@@ -1,10 +1,10 @@
 {
     "ID":"c662afd496e248e1aba2d22ff5ttcccc",
     "ActionKeyword":"nl",
-    "Name":"lunar",
+    "Name":"Lunar",
     "Description":"Lunar 公历、农历、节气、节日查询",
     "Author":"imwr",
-    "Version":"1.0.1",
+    "Version":"1.0.2",
     "Language":"python",
     "Website":"http://github.com/imwr/Wox.Plugin.Lunar",
     "ExecuteFileName":"main.py",

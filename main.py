@@ -30,9 +30,9 @@ class ChineseCalendar(Wox):
             result.append({
                 "Title": '时间 {} {}'.format(date[0: 11] if notime else date,
                                            '【' + jieri + '】' if jieri else ""),
-                "SubTitle": '{} 【{}】 【{}年-{}日】 {} {} {}'.format(ln.ln_date_str(), ln.gz_year(), ln.sx_year(),
+                "SubTitle": '{} 【{}年-{}-{}日{}】{} {}'.format(ln.ln_date_str(), ln.sx_year(), ln.gz_year(), 
                                                                 ln.gz_day(),
-                                                                (ln.gz_hour() + "时") if notime else "",
+                                                                ("-" + ln.gz_hour() + "时") if not notime else "",
                                                                 '【' + jieqi + '】' if jieqi else "",
                                                                 '【' + jieri_lu + '】' if jieri_lu else ""),
                 "IcoPath": "Images/app.png",
