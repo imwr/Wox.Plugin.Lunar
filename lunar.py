@@ -231,14 +231,14 @@ class Lunar(object):
         ct = self.localtime  # 取当前时间
         if not lunar:
             m = ct.month  # 取月份（若为1月、2月则分别按13、14来计算）
-            m = m + 12 if ct.month == 1 or ct.month == 2 else m
-            d = ct.day  # 取日数
-            for k, v in enumerate(self.cel_day[m - 1]):
-                if v == d:
+            cel_day = self.cel_day[m - 1]
+            if not cel_day:
+                return ""
+            for k, v in enumerate(cel_day):
+                if v == ct.day:
                     return self.cel_str[m - 1][k]
         else:
             _, month, day = self.ln_date()
-            # '农历{}月{}'.format(self.lm[month - 1], self.ld[(day - 1) * 2:day * 2])
             for k, v in enumerate(self.cel_trand_date[month - 1]):
                 if v == day:
                     return self.cel_trand[month - 1][k]

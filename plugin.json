@@ -2,11 +2,11 @@
     "ID":"c662afd496e248e1aba2d22ff5ttcccc",
     "ActionKeyword":"nl",
     "Name":"Lunar",
-    "Description":"Lunar 公历、农历、节气、节日查询",
+    "Description":"Lunar 公历、农历、生肖年、节气、节日查询",
     "Author":"imwr",
-    "Version":"1.0.2",
+    "Version":"1.0.3",
     "Language":"python",
     "Website":"http://github.com/imwr/Wox.Plugin.Lunar",
     "ExecuteFileName":"main.py",
-    "IcoPath":"Images\\icon.png"
+    "IcoPath":"Images\\app.png"
 }
